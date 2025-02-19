@@ -152,10 +152,32 @@ if /I "%Debug%"=="main" goto main
 pause >nul
 
 :Video
+echo.
+echo.
+echo                                 _________             ______ ______              
+echo                                 __  ____/____________ ___  /____  /______________
+echo                                 _  / __ __  ___/  __ `/_  __ \_  __ \  _ \_  ___/
+echo                                 / /_/ / _  /   / /_/ /_  /_/ /  /_/ /  __/  /    
+echo                                 \____/  /_/    \__,_/ /_.___//_.___/\___//_/     
+echo.
+echo.   
+echo.
+set /p VerifyName= Are you at school?
+if /I "%VerifyName%"=="yes" goto schoolvideo
+if /I "%VerifyName%"=="No" goto homevideo
+if /I "%VerifyName%"=="no" goto homevideo
+if /I "%VerifyName%"=="Yes" goto schoolvideo
+pause >nul
+
+:homevideo
 start "" https://www.youtube.com/embed/GmBEUG6MCp0?autoplay=1
 goto exit
 pause >nul
 
+:schoolvideo
+start "" https://download1526.mediafire.com/3spq93depzhgEwV_gPLofTmdiehXqb0N2aCSh2qJ8ITT0jNXs6y6vvKngdsq7RV2sG2bbmZecwIJplpUj6Pp9RkdYews_HYz_yGq83CR8ysZ0_HF45jgb5zmAyz4ueBaxz-kLkbW6aNATSxD2FNvrduqwUeSDTc1v8ATeI5pKwOxTw/vpt4xqdhm9s4wl5/VideoTutorial.mp4
+goto exit
+pause >nul
 
 :EXIT
 timeout /t 1 /nobreak >nul  
