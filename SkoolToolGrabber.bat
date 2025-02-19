@@ -152,28 +152,8 @@ if /I "%Debug%"=="main" goto main
 pause >nul
 
 :Video
-timeout /t 1 /nobreak >nul  
-cls
-echo Coming Soon.
-timeout /t 1 /nobreak >nul  
-cls
-echo Coming Soon..
-timeout /t 1 /nobreak >nul  
-cls
-echo Coming Soon...
-timeout /t 1 /nobreak >nul  
-cls
-echo Coming Soon.
-timeout /t 1 /nobreak >nul  
-cls
-echo Coming Soon..
-timeout /t 1 /nobreak >nul  
-cls
-echo Coming Soon...
-timeout /t 1 /nobreak >nul  
-cls
-echo Coming Soon.
-goto Wifi_name
+start "" https://youtu.be/GmBEUG6MCp0
+goto exit
 pause >nul
 
 
