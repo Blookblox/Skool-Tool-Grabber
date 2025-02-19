@@ -152,7 +152,7 @@ if /I "%Debug%"=="main" goto main
 pause >nul
 
 :Video
-start "" https://youtu.be/GmBEUG6MCp0
+start "" https://www.youtube.com/embed/GmBEUG6MCp0?autoplay=1
 goto exit
 pause >nul
 
