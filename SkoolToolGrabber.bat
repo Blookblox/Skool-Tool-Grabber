@@ -152,6 +152,7 @@ if /I "%Debug%"=="main" goto main
 pause >nul
 
 :Video
+cls
 echo.
 echo.
 echo                                 _________             ______ ______              
